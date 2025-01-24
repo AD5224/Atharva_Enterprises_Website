@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Atharva Enterprises</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Leaflet.js CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+
+    <!-- Leaflet.js JS -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+</head>
+<body>
+
+<!-- Landing Page -->
+<div class="landing-page">
+    <div class="left-section">
+        <img class="background-img" src="http://integratedstructure.com/wp-content/uploads/2020/07/Homepage-Slider-Fabrication-Shop-Grinding.jpg" alt="Background Image">
+    </div>
+    <div class="right-section">
+        <h1>Atharva Enterprises</h1>
+        <p>Fabrication | Sugarcane Machines | Innovation in Engineering</p>
+        <a href="#main-content">
+            <button class="learn-more-btn">Learn More</button>
+        </a>
+    </div>
+</div>
+
+<!-- Navigation Bar -->
+<nav>
+    <ul class="nav-list">
+        <li><a href="#intro">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#owners">Owners</a></li>
+        <li><a href="#map">Map</a></li>
+    </ul>
+</nav>
+
+<!-- Main Content -->
+<div id="main-content">
+    <!-- Introduction Section -->
+    <section id="intro">
+        <h2>Welcome to Atharva Enterprises</h2>
+        <p>Atharva Enterprises is a renowned fabrication workshop specializing in providing innovative fabrication solutions and high-quality sugarcane machines. We cater to a wide range of industries, ensuring precision and reliability in all our services.</p>
+        <p>Our mission is to offer top-notch services that meet the unique needs of our customers, with a focus on sustainability, durability, and cost-effectiveness.</p>
+    </section>
+
+    <!-- Service Section -->
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="services-container">
+            <div class="service-item">
+                <img src="/images/welding.jpeg" alt="Fabrication Service">
+                <h3>Fabrication Services</h3>
+                <p>We provide comprehensive fabrication services, including welding, cutting, and assembly of parts for various industrial needs.</p>
+            </div>
+            <div class="service-item">
+                <img src="/images/sugarcane-machines.jpeg" alt="Sugarcane Machine">
+                <h3>Sugarcane Machines</h3>
+                <p>We specialize in manufacturing high-performance sugarcane machines that are efficient and durable, ensuring smooth operations in the field.</p>
+            </div>
+            <div class="service-item">
+                <img src="/images/door-manufacturing.jpeg" alt="Door manufacturing">
+                <h3>Door Manufacturing</h3>
+                <p>We specialize in crafting high-quality, durable, and customized doors to meet your unique needs with precision and reliability.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact">
+        <div class="contact-container">
+            <h2>Contact Us</h2>
+            <form id="contact-form" method="POST">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+</div>
+
+<!-- Owner's Information -->
+<section id="owners">
+    <h2>Meet the Owners</h2>
+    <p><strong>Yogiraj Deo</strong> - Owner</p>
+    <p>Email: <a href="mailto:yogiraj.deo0511@gmail.com">yogiraj.deo0511@gmail.com</a></p>
+    <p><strong>Mandar Deo</strong> - Owner</p>
+    <p>Email: <a href="mailto:mandardeo@gmail.com">mandardeo@gmail.com</a></p>
+    
+    <!-- Address Section -->
+    <div class="address-container">
+        <h2>Our Location</h2>
+        <p>Atharva Enterprises near Aradhya English Medium School, Maulinagar, Katraj Kondhawa Road, Katraj Pune - 46</p>
+        <p>For more details, you can contact us via <a href="mailto:info@atharvaenterprises.com">email</a>.</p>
+    </div>
+</section>
+
+<!-- Map Section -->
+<section id="map">
+    <h2>Our Location</h2>
+    <div id="map" style="height: 400px;"></div> <!-- Map container with a height -->
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2024 Atharva Enterprises. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

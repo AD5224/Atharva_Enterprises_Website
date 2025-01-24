@@ -1,0 +1,391 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* Landing Page Styles */
+.landing-page {
+    display: flex;
+    height: 100vh;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-section {
+    flex: 1;
+    position: relative;
+    background-image: url('http://integratedstructure.com/wp-content/uploads/2020/07/Homepage-Slider-Fabrication-Shop-Grinding.jpg'); /* Update with correct path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    -webkit-filter: blur(0px); /* Ensure there's no blur */
+    filter: blur(0px); /* Ensure there's no blur */
+}
+
+.background-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.right-section {
+    flex: 1;
+    background-color: #0066cc; /* Blue background */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.right-section h1 {
+    font-size: 3rem;
+}
+
+.right-section p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.learn-more-btn {
+    padding: 12px 24px;
+    margin-top: 20px;
+    background: linear-gradient(90deg, #FF7F50, #FF4500);
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.learn-more-btn:hover {
+    background: linear-gradient(90deg, #FF4500, #FF7F50);
+    transform: scale(1.05);
+}
+
+/* Navigation Bar Styles */
+nav {
+    position: sticky;
+    top: 0;
+    background-color: #222;
+    color: white;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    margin: 0;
+    list-style: none;
+}
+
+.nav-list li {
+    margin: 0 15px;
+}
+
+.nav-list a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-list a:hover {
+    color: #FF7F50;
+}
+
+/* Main Content Styles */
+#main-content {
+    padding: 50px;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+/* Introduction Section Styles (Updated) */
+#intro {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 30px 0;
+}
+
+#intro h2 {
+    font-size: 2.8rem; /* Increased size */
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1); /* Added shadow */
+}
+
+#intro p {
+    font-size: 1.2rem; /* Slightly larger font size */
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#intro p:last-child {
+    margin-bottom: 0;
+}
+/* Initial state */
+#intro {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1.5s ease-out forwards; /* Apply animation */
+}
+
+/* Animation Keyframes */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Service Section Styles */
+#services {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.services-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.service-item {
+    width: 250px;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-item:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.service-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.service-item h3 {
+    font-size: 1.5rem;
+    margin-top: 15px;
+    color: #333;
+}
+
+.service-item p {
+    color: #555;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+/* Contact Form Styles */
+#contact {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.contact-container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+form .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+form input, form textarea {
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #ff7e5f;
+    outline: none;
+}
+
+form button {
+    padding: 8px 15px;
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: auto;
+    margin-top: 20px;
+}
+
+form button:hover {
+    background-color: #005f7f;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #222;
+    color: white;
+}
+
+/* Animations for contact form */
+.contact-container {
+    animation: fadeInUp 1s ease-out;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Owner's Information Section Styles */
+#owners {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#owners h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#owners p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+#owners a {
+    color: #008CBA;
+    text-decoration: none;
+}
+
+#owners a:hover {
+    text-decoration: underline;
+}
+
+/* Fade-in Animations for Sections */
+section {
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeIn 1s ease-out forwards;
+}
+
+section:nth-child(odd) {
+    animation-delay: 0.3s;
+}
+
+section:nth-child(even) {
+    animation-delay: 0.6s;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Address Section Styles */
+.address-container {
+    margin-top: 30px; /* Add some space between owner's info and address */
+    text-align: center;
+    background-color: #f9f9f9; /* Light background for the address */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px; /* Limit the width */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#owners .address-container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+#owners .address-container p {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+#map {
+    width: 60%; /* Shrinks the map further from both sides */
+    margin: 0 auto; /* Centers the map */
+    height: 400px; /* Keeps the height of the map */
+    border: 2px solid #ccc; /* Optional: adds a border around the map */
+}
